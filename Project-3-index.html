@@ -11,26 +11,31 @@
 
     <form action="index.html" method="post">
         <h1>Sign up for our newsletter</h1>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <p class="cen">Get the latest news on how your code is doing right in your inbox</p>
         <hr class="hr1">
         <hr>
         <!-- Organization of form 
         label input, Fieldsets and legends -->
 
-        <fieldset>
+        <fieldset class="blackboard upper" >
         <legend><span class="number">1</span>Contact info</legend>    
+       
             <label for="name">Name<span class="star">*</span></label>
             <input class="outline" type="text" id="name" name="user_name" placeholder="required">
+        
+        
             <label for="mail">Email<span class="star">*</span></label>
             <input class="outline" type="email" id="mail" name="user_email" placeholder="required">
+      
+          
             <label for="phone">Phone</label>
             <input class="outline" type="tel" id="phone" name="user_phone">
             <label for="address">Address</label>
             <input class="outline" type="text" id="address" name="address">
             <label for ="city">City</label>
             <input class="outline" type="text" id="city" name="city">
-            
-            <select class="outline">
+            <label for ="state">State</label>
+            <select id="state" class="outline">
                 <option value=”” disabled selected>Choose State</option>
                 <option value="MI">Michigan</option>
                 <option value="CA">California</option>
@@ -39,11 +44,11 @@
                 <option value="OH">Ohio</option>
             </select>
             <label for="zip">zip code</label>
-            <input class="outline" type="text" id="zip" name="zip" maxlength="10" size="20">
+            <input class="outline zip" type="text" id="zip" name="zip" maxlength="10" size="10">
             <hr class="hr2">
     
         </fieldset>    
-        <fieldset>
+        <fieldset class="blackboard" lower>
         
         <legend><span class="number">2</span>Newsletter</legend> 
             
@@ -69,7 +74,7 @@
         </fieldset>
        
         <button type="submit">Sign Up</button>
-        <p>Copyright The code Review</p>
+        <p class="cen">Copyright The code Review</p>
 
     </form>
    
