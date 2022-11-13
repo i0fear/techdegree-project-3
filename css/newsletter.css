@@ -7,7 +7,17 @@
   body {
     font-family: 'Nunito', sans-serif;
     color: #384047;
+    
   }
+  .blackboard{
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 15px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 0px;
+   
+  }
+
   
   form {
     max-width: 300px;
@@ -45,7 +55,7 @@
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   
   input[type="radio"],
@@ -58,7 +68,7 @@
   } 
 
   input:focus, textarea:focus{ 
-    background-color: lightblue;
+    background-color: white;
     /* outline: 3px solid #09f; */
    
 }
@@ -74,7 +84,7 @@
     height: 32px;
     border-radius: 5px;
   }
-  select:focus{background-color:rgb(157, 217, 237)}
+  select:focus{background-color:white}
   .star{color: red}
   .hr1{border: 3px solid black;}
   .hr2{border: 1px solid black;}
@@ -91,7 +101,8 @@
     width: 100%;
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) outset;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
   
@@ -103,6 +114,7 @@
   legend {
     font-size: 1.4em;
     margin-bottom: 10px;
+    padding-top: 40px;
   }
   
   label {
@@ -128,13 +140,28 @@
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 100%;
   }
+ .zip{
+    max-width: 7rem;
+  }
+  .cen{
+    text-align: center;
+    
+  }
+  select{
+    padding: 20px;
+    
+  }
 
   
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
   
     form {
-      max-width: 480px;
+     
+      max-width: 768px;
     }
+    label:after { content:inline }
+  
+
   
   }
   
