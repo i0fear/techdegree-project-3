@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Letter Signup</title>
+    <link rel="stylesheet" href="css/newsletter.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form id="register" name="register" action="index.html" method="post">
+        <h1>Sign up for our newsletter</h1>
+        <p class="cen">Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="hr1">
+        <hr>
+        <!-- Organization of form 
+        label input, Fieldsets and legends -->
+
+        <fieldset class="what blackboard" >
+        <legend><span class="number">1</span>Contact info</legend>    
+       <p>
+            <label for="name">Name<span class="star">*</span></label>
+            <input class="outline" type="text" id="name" name="user_name" placeholder="required">
+        </p>
+        <p>
+            <label for="email">Email<span class="star">*</span></label>
+            <input class="outline" type="email" id="email" name="user_email" placeholder="required">
+      </p>
+       <p>
+        <label for="phone">Phone</label>
+        <input class="outline" type="tel" id="phone" name="user_phone">
+       </p>   
+          <p>
+            <label for="address">Address</label>
+            <input class="outline" type="text" id="address" name="address">
+          </p>
+           <p>
+            <label for ="city">City</label>
+            <input class="outline" type="text" id="city" name="city">
+           </p>
+           <p>
+            <label for ="state">State</label>
+            <select id="state" name="state" class="outline">
+                <option value=”” disabled selected>Choose State</option>
+                <option value="MI">Michigan</option>
+                <option value="CA">California</option>
+                <option value="FL">Florida</option>
+                <option value="TX">Texas</option>
+                <option value="OH">Ohio</option>
+            </select>
+           </p>
+           <p class="pzip">
+            <label for="zip">zip code</label>
+            <input class="outline zip" type="text" id="zip" name="zip" >
+           </p>
+           
+            <hr class="hr2">
+    
+        </fieldset>    
+        <fieldset class="blackboard lower" >
+        
+        <legend><span class="number">2</span>Newsletter</legend> 
+            
+            <label >Select the newsletters you would like to receive</label>
+            <input type="checkbox" id="htmlnewsletter" value="HTML_newsletter" name="newsletter" >
+            <label class="light" for="htmlnewsletter">html Newsletter</label><br>
+            <input type="checkbox" id="css" value="CSS_News" name="newsletter">
+            <label class="light" for="css">CSS News</label><br>
+            <input type="checkbox" id="javascript" value="Javascript_News" name="newsletter">
+            <label class="light" for="javascript">Javascript News</label>
+            <br><br>
+            <label>Newsletter format</label>
+            <input type="radio" id="html" value="html" name="format">
+            <label class="light" for="html">HTML</label><br>
+            <input type="radio" id="plain" value="plain" name="format"> 
+            <label class="light" for="plain">Plain text</label><br>
+           
+            <br>
+            <label for="comment">Other topics you'd like to hear about</label>
+            <textarea class="light outline" id="comment" name = "user_comment"></textarea>
+           
+            
+        </fieldset>
+       
+        <button type="submit">Sign Up</button>
+        <p class="cen">Copyright The code Review</p>
+
+    </form>
+   
+</body>
+</html>
